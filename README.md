@@ -46,8 +46,7 @@ Before running the application, make sure you have the following installed on yo
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/notes-app-backend.git
-    cd notes-app-backend
+    git clone https://github.com/ajaymedidhi/3Frames_Backend.git
     ```
 
 2. Install the dependencies:
