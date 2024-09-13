@@ -18,7 +18,20 @@ This is the backend of a simple Student Management System built with Node.js and
 
 ## Project Structure
 
-/src |-- /controllers # API logic for adding, fetching, and deleting students |-- /models # Mongoose schema for Student |-- /routes # API routes |-- /config # MongoDB connection configuration |-- server.js # Main server entry point README.md # This file
+src/
+│
+├── controllers/  # API logic for adding, fetching, and deleting students
+│
+├── middleware/   # Mongoose schema for Student
+│
+├── models/       # Mongoose schema for Student
+│
+├── routes/       # API routes
+│
+├── app.js        # Main server entry point
+│
+├── server.js     # Main server entry point
+└── .env
 
 
 ## Prerequisites
@@ -70,8 +83,8 @@ Before running the application, make sure you have the following installed on yo
   "lastName": "M",
   "course": "BTech",
   "dob": "2002-08-15"
-} 
-
+}
+```
 
 #### Response Body:
 ```json
@@ -82,5 +95,35 @@ Before running the application, make sure you have the following installed on yo
   "course": "BTech",
   "dob": "2002-08-15T00:00:00.000Z"
 }
+```
+
+### Get All Students
+
+- **URL**: `/api/students`
+- **Method**: `GET`
+
+#### Response Body:
+
+```json
+[
+  {
+    "_id": "64d3c6f1f9a5a811b5e00c78",
+    "firstName": "Ajay",
+    "lastName": "M",
+    "course": "BTech",
+    "dob": "2002-08-15T00:00:00.000Z"
+  },
+  {
+    "_id": "64d3c7f2e9f7c90ab5d12345",
+    "firstName": "Sravani",
+    "lastName": "M",
+    "course": "MCA",
+    "dob": "2004-05-12T00:00:00.000Z"
+  }
+]
+```
+
+
+
 
 
