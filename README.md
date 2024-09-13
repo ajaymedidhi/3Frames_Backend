@@ -121,6 +121,24 @@ Before running the application, make sure you have the following installed on yo
   }
 ]
 ```
+### Delete a Student
+
+- **URL**: `/api/students/:id`
+- **Method**: `DELETE`
+
+```json
+{
+  "message": "Student deleted successfully"
+}
+```
+
+## License
+
+  - This project is licensed under the MIT License - see the LICENSE file for details.
+  
+  - This format ensures that the directory structure is displayed correctly and all sections are clear and properly separated.
+
+
 
 
 
